@@ -1,3 +1,4 @@
+
 #define RELAY_CH1 13  // 디지털 13번핀으로 설정
 #define RELAY_CH2 12
 #define RELAY_CH3 11 // 콩돌이 라인
@@ -45,4 +46,5 @@ void loop() {
       Serial.print("onoff: ");
       Serial.println(onoff);
       delay(21600000);// 시간
-    }
+  
+  }
