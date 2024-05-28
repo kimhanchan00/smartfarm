@@ -20,10 +20,11 @@ void lightmange(int time_h) {
 }
 
 void watermanage(int volume){
-  int waterValue = analogRead(water); // 아날로그 핀에서 조도센서 값 읽기
+  int waterValue =analogRead(water); // 아날로그 핀에서 조도센서 값 읽기
   while (waterValue < volume){
     digitalWrite(RELAY_CH4, HIGH);
     delay(10);
+    
     waterValue = analogRead(water); // 값 다시 읽기
   }
 }
